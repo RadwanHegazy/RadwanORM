@@ -34,7 +34,7 @@ config = {
 db = RadwanORM()
 db = db.connect(
     dbtype='sqlite3', # set the db type
-    config=config # set the db config variable
+    config=config # set the db configuration
 )
 ```
 
@@ -42,7 +42,7 @@ db = db.connect(
 ### Note :
 For connect with mysql you should install the mysql in your device -- [Watch for install MySQl in windows 10](https://www.youtube.com/watch?v=BxdSUGBs0gM)
 
-Then add change the dbtype to mysql and change the config dict to :
+Then change the dbtype to mysql and change the config dict , then code must be like :
 ```
 from orm import RadwanORM, Fields
 
