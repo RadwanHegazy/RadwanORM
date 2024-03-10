@@ -10,9 +10,11 @@
 run on your cmd or terminal
 ```
 git clone https://github.com/RadwanHegazy/RadwanORM
-
+```
+```
 cd RadwanORM
-
+```
+```
 pip install -r requirments.txt
 ```
 
