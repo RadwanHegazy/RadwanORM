@@ -18,7 +18,7 @@ cd RadwanORM
 pip install -r requirments.txt
 ```
 
-**create a python file and open it on your editor and type for test the orm**
+**create a python file and open it on your editor and follow the instructions for test the orm**
 
 ## For Connect With Sqlite3
 ```
