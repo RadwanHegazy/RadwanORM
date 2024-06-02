@@ -21,7 +21,7 @@ pip install -r requirments.txt
 **create a python file and open it on your editor and follow the instructions for test the orm**
 
 ## For Connect With Sqlite3
-```
+```python
 from orm import RadwanORM, Fields
 
 # initalized the sqlite3 db
@@ -43,7 +43,7 @@ db = db.connect(
 For connect with mysql you should install the mysql in your device -- [Watch for install MySQl in windows 10](https://www.youtube.com/watch?v=BxdSUGBs0gM)
 
 Then change the dbtype to mysql and change the config dict , then code must be like :
-```
+```python
 from orm import RadwanORM, Fields
 
 # initalized the mysql db
@@ -67,7 +67,7 @@ db = db.connect(
 ----
 ### Create The Custom Tables With Their Fields.
 
-```
+```python
 # set the tables of the db and its fields
 class User :
     full_name = Fields.String(max_len=100)
@@ -86,7 +86,7 @@ class Car:
 ---
 ### Write The Tables in the db
 
-```
+```python
 # create the table in the db
 db.create_table(User) # write User table in db
 db.create_table(Car) # write Car table in db
@@ -98,7 +98,7 @@ db.create_table(Car) # write Car table in db
 ### First:
 Create the manager to manage our table in db.
 
-```
+```python
 user = db.manage(User)
 car = db.manage(Car)
 ```
@@ -106,7 +106,7 @@ car = db.manage(Car)
 ### Secend:
 Going To Create The CRUD Operations !!!
 
-```
+```python
 # Create / inseart
 user.insert(
     full_name = "Radwan Gaber",
